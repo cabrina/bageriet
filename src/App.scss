@@ -1,0 +1,76 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*     ----------     FONTS     ----------     */
+
+$pri-font: 'Open Sans';
+$sec-font: 'Lobster 1.4';
+
+/*     ----------     COLORS     ----------     */
+
+$blue: #7499b3;
+
+.App {
+  width: 100%;
+}
+
+/*     ----------     HEADER     ----------     */
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color:$blue;
+  
+  nav {
+    width: 100%;
+    height: 100%;
+
+    ul {
+      width: 40%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      line-height: 130px;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          font-family: $pri-font;
+          text-transform: uppercase;
+          color: white;
+          font-size: 12px;
+        }
+
+        .header-logo {
+          font-family: $sec-font;
+          text-transform: lowercase;
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+/*     ----------     HOME     ----------     */
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  SLIDER  */
+.slider {
+  height: 600px;
+
+  img {
+    width: 100%;
+    height: 600px;
+    
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import {
   BrowserRouter as Router,
@@ -11,6 +11,7 @@ import Products from './components/Content/Products/Products';
 import Contact from './components/Content/Contact/Contact';
 import Login from './components/Content/Login/Login'
 import Header from './components/Header/Header';
+import HomePage from './components/Content/HomePage/HomePage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Switch>
 
         <Header />
+        <HomePage />
       </Router>
     </div>
   );
