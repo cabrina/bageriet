@@ -12,6 +12,7 @@ import Contact from './components/Content/Contact/Contact';
 import Login from './components/Content/Login/Login'
 import Header from './components/Header/Header';
 import HomePage from './components/Content/HomePage/HomePage';
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
         <Header />
         <HomePage />
+        <Footer />
       </Router>
     </div>
   );
