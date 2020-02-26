@@ -241,7 +241,7 @@ $black: #252525;
   height: 1000px;
   display: grid;
   grid-template-columns: 500px 1fr 500px;
-  grid-template-rows: 200px 800px;
+  grid-template-rows: 300px 700px;
 
   .headline-news {
     grid-column: 2/3;
@@ -271,7 +271,41 @@ $black: #252525;
     grid-row: 2/-1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 25px;
+    text-align: center;
+    font-family: $pri-font;
+
+    div {
+      img {
+        width: 80%;
+      }
+
+      h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 15px 0;
+        color: grey;
+      }
+
+      input {
+        width: 70%;
+        height: 35px;
+        background-color: white;
+        border: .5px solid grey;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: $pri-font;
+        letter-spacing: 1px;
+      }
+    }
+    
   }
 }
 

@@ -18,16 +18,16 @@ function App() {
   return (
     <div className="App">
       <Router>
+      <Header />
+
         <Switch>
-          <Route exact path="/" />
+          <Route exact path="/" component={HomePage}/>
           <Route path="/" component={Products}/>
-          <Route exact path="/" />
+          <Route exact path="/" component={HomePage}/>
           <Route path="/" component={Contact}/>
           <Route path="/" component={Login}/>
         </Switch>
 
-        <Header />
-        <HomePage />
         <Footer />
       </Router>
     </div>
