@@ -21,13 +21,12 @@ function App() {
       <Header />
 
         <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/" component={Products}/>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/" component={Contact}/>
-          <Route path="/" component={Login}/>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/" component={Contact} />
+          <Route path="/" component={Login} />
         </Switch>
-
         <Footer />
       </Router>
     </div>
