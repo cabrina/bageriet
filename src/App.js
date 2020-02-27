@@ -13,20 +13,23 @@ import Login from './components/Content/Login/Login'
 import Header from './components/Header/Header';
 import HomePage from './components/Content/HomePage/HomePage';
 import Footer from './components/Footer/Footer'
+import MessageSent from './components/Content/Contact/MessageSent';
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
+        <Header />
 
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/" component={HomePage} />
-          <Route path="/" component={Contact} />
+          <Route path="/contact" component={Contact} />
           <Route path="/" component={Login} />
+          <Route path="/sent" component={MessageSent} />
         </Switch>
+
         <Footer />
       </Router>
     </div>
